@@ -16,29 +16,32 @@ export function createContext(element) {
 export function createElements(parentElement) {
   parentElement.innerHTML =
     `
-    <canvas id="canvas" width="200" height="400"></canvas>
-    <br>
-    <button id="start">Start</button>
-    <br>
-    <p>
-      <label for="level">Level: </label><span id="level"></span>
-    </p>
-    <p>
-      <label for="lines">Lines: </label><span id="lines"></span>
-    </p>
-    <p>
-      <label for="score">Score: </label><span id="score"></span>
-    </p>
-    <hr>
-    <p>
-      <label for="two-color">Two Color Mode:</label><input type="checkbox" id="two-color">
-    </p>
-    <p>
-      <label for="color1">Color 1: </label><input type="color" id="color1">
-    </p>
-    <p>
-      <label for="color2">Color 2: </label><input type="color" id="color2">
-    </p>
+    <div id="main-game">
+      <canvas id="canvas" width="200" height="400"></canvas>
+      <br>
+      <button id="start">Start</button>
+      <br>
+      <p>
+        <label for="level">Level: </label><span id="level"></span>
+      </p>
+      <p>
+        <label for="lines">Lines: </label><span id="lines"></span>
+      </p>
+      <p>
+        <label for="score">Score: </label><span id="score"></span>
+      </p> 
+    </div>
+    <div id="two-color-div">
+      <p>
+        <label for="two-color">Two Color Mode:</label><input type="checkbox" id="two-color">
+      </p>
+      <p>
+        <label for="color1">Color 1: </label><input type="color" id="color1">
+      </p>
+      <p>
+        <label for="color2">Color 2: </label><input type="color" id="color2">
+      </p>
+    </div>
     `
 }
 
