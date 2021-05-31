@@ -9,7 +9,6 @@ const ctx = createContext(canvas);
 
 
 if (ctx !== null) {
-  console.log(ctx);
   let game;
   start.addEventListener("click", () => {
     game = new Game(ctx, { levelElement, linesElement, scoreElement }, twoColor.checked ? [color1.value, color2.value] : []);

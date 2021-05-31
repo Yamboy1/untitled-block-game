@@ -81,9 +81,7 @@ export class Board {
   rotatePiece(piece, clockwise) {
     piece.rotate(true);
     for (const tile of piece.tiles) {
-      console.log(tile)
       if (this.has(tile.x, tile.y) || this.checkOutOfBounds(tile.x, tile.y)) {
-        console.log("here")
         piece.rotate(false)
       }
     }

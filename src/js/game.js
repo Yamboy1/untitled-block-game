@@ -15,8 +15,6 @@ export class Game {
   /** @const */
   #height = 20;
 
-  #elements;
-
   /** @type {boolean} */
   #running = false;
 
